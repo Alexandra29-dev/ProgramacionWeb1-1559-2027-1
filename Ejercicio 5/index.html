@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,6 +38,7 @@
         <h2>Tablas HTML</h2>
         <P> Es un elemento que nos permite distribuir información en un formato específico</P>
         <table border="1px">
+            <caption>Países</caption>
             <tr>
                 <th>País</th>
                 <th>Capital</th>
@@ -70,6 +71,101 @@
             </tr>
         </table>
     </div>
+
+    <br><br>
     
+    <div>
+        <table border="1px"> 
+            <caption>Evaluaciones</caption>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">1<sup>a</sup>Evaluación</th>
+                <th colspan="2">2<sup>a</sup>Evaluación</th>
+                <th colspan="2">3<sup>a</sup>Evaluación</th>
+            </tr>
+            <tr>
+                <td>Aprobados</td>
+                <td>Suspendidos</td>
+                <td>Aprobados</td>
+                <td>Suspendidos</td>
+                <td>Aprobados</td>
+                <td>Suspendidos</td>
+            </tr>
+            <tr>
+                <td>Informatica</td>
+                <td>20</td>
+                <td>5</td>
+                <td>19</td>
+                <td>4</td>
+                <td>30</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Matemáticas</td>
+                <td>10</td>
+                <td>12</td>
+                <td>15</td>
+                <td>4</td>
+                <td>30</td>
+                <td>7</td>
+            </tr>
+        </table>
+    </div>
+
+    <br><br>
+
+    <div>
+        <table border="1px" style="text-align: center;">
+            <caption> Horario</caption>
+            <tr>
+                <th>Horas</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td>8:00-9:00</td>
+                <td rowspan="2">Matemáticas</td>
+                <td>Lengua</td>
+                <td>Música</td>
+                <td></td>
+                <td rowspan="2">Matemáticas</td>
+            </tr>
+            <tr>
+                <td>9:00-10:00</td>
+                <td>Ingles</td>
+                <td>Ingles</td>
+                <td>E. Física</td>
+            </tr>
+            <tr>
+                <td>10:00-10:30</td>
+                <td colspan="5">Recreo</td>
+            </tr>
+            <tr>
+                <td>10:30-11:03</td>
+                <td>E. Física</td>
+                <td>Valenciano</td>
+                <td rowspan="2">Lengua</td>
+                <td>Informatica</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>12:30-13:30</td>
+                <td>Música</td>
+                <td>E. Física</td>
+                <td rowspan="2">Matemáticas</td>
+                <td>Informatica</td>
+            </tr>
+            <tr>
+                <td>13:30-14:30</td>
+                <td></td>
+                <td>Informatica</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

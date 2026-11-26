@@ -1,0 +1,156 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom, black, rgb(233, 95, 171));
+    color: white;
+}
+
+#encabezado{
+    border: 0.2 rem pink;
+    font-family: 2rem;
+    position: sticky;
+    top: 0rem;
+    z-index: 10;
+}
+
+.logo{
+    border: 0.2rem solid rgb(202, 70, 92);
+    border-radius: 45%;
+    width: 20%;
+    height: 20rem;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 45%;
+}
+
+#encabezado h1{
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.5rem rgb(250, 154, 170);
+    color: rgb(218, 20, 128);
+    position: absolute;
+    top: 7rem;
+    left: 45%;
+}
+
+#navegacion ul{
+    list-style-type: none;
+    padding-left: 0;
+    position: absolute;
+    top: 2rem;
+    right: 0rem;
+    border: 0.2rem solid rgb(199, 35, 125);
+    width: 30%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#navegacion ul li{
+    display: inline-block;
+}
+
+#elementos-posicionados{
+    border: 0.2rem solid rgb(145, 39, 56);
+    padding: 1rem;
+    height: 90rem;
+    position: relative;
+}
+
+.gato-sentado{
+    border: 0.2rem solid rgb(206, 102, 119);
+    width: 15rem;
+    height: 20rem;
+    margin: 0.5rem;
+    position: relative;
+    position: sticky;
+    top: 0rem;
+}
+
+.gato-sentado img{
+    width: 100%;
+    height: 100%;
+}
+
+.gato-naranja{
+    border: 0.2rem solid rgb(253, 56, 89);
+    width: 20rem;
+    height: 20rem;
+    margin: 0.5rem;
+    position: absolute;
+    z-index: 2;
+    top: 0rem;
+    right: 0rem;
+}
+
+.gato-naranja img{
+    width: 100%;
+    height: 100%;
+}
+
+.gato-asustado{
+    border: 0.2rem solid rgb(253, 56, 122);
+    width: 20rem;
+    height: 20rem;
+    margin: 0.5rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+}
+
+.gato-asustado img{
+    width: 100%;
+    height: 100%;
+}
+
+.gato-zoom{
+    border: 0.2rem solid rgb(206, 26, 86);
+    width: 25rem;
+    height: 20rem;
+    margin: 0.5rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+}
+
+.gato-zoom img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*Consultas de medios (medias queries)
+Sirve para definir los estilos a elementos HTML según el tamaño de la pantalla de nuestro dispositivo, gracas a esto se proporciona una herramienta que nos sirve para la creación de páginas web responsivas o adaptables.
+
+Si se definen varias consultas de medios, se deben poner en forma descendente según la medidda del dispositivo.
+Moviles (420px), Tablet(480px-960px), PC(960px-1280px)
+*/
+
+@media screen and (max-width: 1250px) {
+    #encabezado h1{
+        left: 29%;
+        font-size: 3rem;
+    }
+
+    .logo{
+        height: 27rem;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    #encabezado h1{
+        left: 25%;
+        font-size: 2.5rem;
+    }
+
+    .logo{
+        height: 22rem;
+    }
+}
